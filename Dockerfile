@@ -1,6 +1,6 @@
 FROM tianon/qemu
 
-RUN apt-get update &&  apt-get install -y wget
+RUN apt-get update &&  apt-get install -y wget net-tools
 
 RUN cd /usr/local/bin && wget https://github.com/yudai/gotty/releases/download/v1.0.1/gotty_linux_amd64.tar.gz &&\
 	tar xvf gotty_linux_amd64.tar.gz
